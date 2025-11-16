@@ -6,7 +6,7 @@ namespace Tyuiu.ZakharovaVI.Sprint5.Task0.V29
     class Program
     {
         static void Main(string[] args)
-        {
+        { 
             int x = 3;
 
             DataService ds = new DataService();
