@@ -37,9 +37,11 @@ namespace Tyuiu.ZakharovaVI.Sprint5.Task0.V29
             Console.WriteLine("***************************************************************************");
 
             string res = ds.SaveToFileTextData(x);
+            string resultFromFile = File.ReadAllText(res);
 
+            Console.WriteLine("Результат:" + resultFromFile);
             Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
+            Console.WriteLine("Создан!"); 
             Console.ReadKey();
         }
     }

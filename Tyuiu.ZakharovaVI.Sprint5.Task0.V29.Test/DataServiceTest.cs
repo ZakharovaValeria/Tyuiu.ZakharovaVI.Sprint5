@@ -6,14 +6,14 @@ namespace Tyuiu.ZakharovaVI.Sprint5.Task0.V29.Test
     public sealed class DataServiceTest 
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethod1() 
         {
             string path = @"C:\Users\ТИУ\source\repos\Tyuiu.ZakharovaVI.Sprint5\Tyuiu.ZakharovaVI.Sprint5.Task0.V29\bin\Debug\OutPutFileTask0.txt";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExsists = fileInfo.Exists;
             bool wait = true;
-            Assert.AreEqual(wait, fileExsists);
+            Assert.AreEqual(wait, fileExsists); 
         }
     }
 }

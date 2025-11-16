@@ -6,11 +6,12 @@ namespace Tyuiu.ZakharovaVI.Sprint5.Task0.V29.Lib
 {
     public class DataService : ISprint5Task0V29
     {
-        public string SaveToFileTextData(int x)
+        public string SaveToFileTextData(int x) 
         {
-            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
-            double z = (6.1 * Math.Pow(x, 3)) + (0.23 * Math.Pow(x, 2)) + (1.04 * x);
-            z = Math.Round(z, 3);
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask0.txt");
+            //$@"{Directory.GetCurrentDirectory()}\
+            double z = 6.1 * Math.Pow(x, 3) + 0.23 * Math.Pow(x, 2) + 1.04 * x;
+            z = Math.Round(z, 3); 
             File.WriteAllText(path, Convert.ToString(z));
             return path;
         } 
