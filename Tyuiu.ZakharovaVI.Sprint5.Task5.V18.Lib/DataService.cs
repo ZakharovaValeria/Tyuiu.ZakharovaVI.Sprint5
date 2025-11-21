@@ -15,11 +15,13 @@ namespace Tyuiu.ZakharovaVI.Sprint5.Task5.V18.Lib
             double res = 1;
             using  (StreamReader reader = new StreamReader(path))
             {
+
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
+                    line = line.Trim().Replace(".", ",");
                     string[] numbers = line.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries);
-                    foreach (string numberstr in numbers)
+                    foreach (string numberstr in numbers) 
                     {
                         if (double.TryParse(numberstr, out double num))
                         {

@@ -10,7 +10,7 @@ namespace Tyuiu.ZakharovaVI.Sprint5.Task5.V18
 
             DataService ds = new DataService();
 
-            Console.Title = "Спринт #5 | Выполнила: Захарова В. И. | ИБКС-25-1";
+            Console.Title = "Спринт #5 | Выполнила: Захарова В. И. | ИБКС-25-1"; 
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
