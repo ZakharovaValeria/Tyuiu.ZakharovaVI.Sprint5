@@ -13,14 +13,14 @@ namespace Tyuiu.ZakharovaVI.Sprint5.Task7.V9.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathSaveFile = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask7.txt";
+            string pathSaveFile = Path.Combine(Directory.GetCurrentDirectory(), "OutPutFileTask7.txt");
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExsists = fileInfo.Exists;
 
             if (fileExsists)
             {
-                File.Delete(pathSaveFile);
+                File.Delete(pathSaveFile); 
             }
 
             //string strLine = "";

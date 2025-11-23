@@ -26,8 +26,8 @@ namespace Tyuiu.ZakharovaVI.Sprint5.Task7.V9
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string path = $@"{Directory.GetCurrentDirectory()}\InPutDataFileTask7V9.txt";
-            string pathSaveFile = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask7.txt";
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "InPutDataFileTask7V9.txt"); 
+            string pathSaveFile = Path.Combine(Directory.GetCurrentDirectory(), "OutPutFileTask7.txt");
             Console.WriteLine("Данные находятся в файле:" + path);
 
             Console.WriteLine("***************************************************************************");
